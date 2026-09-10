@@ -14,5 +14,5 @@ A DIY smart speaker backend with Hindi/English/Bengali voice support, multiple I
 ## Quick Start
 1. Clone repo:  
    ```bash
-   git clone https://github.com/yourname/esp32-music-india.git
+   git clone https://github.com/debanjangain/esp32-music-india.git
    cd xiaozhi-music-india
