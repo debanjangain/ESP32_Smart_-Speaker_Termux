@@ -1,0 +1,25 @@
+server:
+  address: http://192.168.1.50:5000
+
+apis:
+  weather: "YOUR_OPENWEATHER_API_KEY"
+  news_rss: "http://feeds.bbci.co.uk/news/rss.xml"
+  sports: "YOUR_CRICKET_API_KEY"
+  podcast: "https://api.podcastindex.org"
+  youtube: "yt-dlp"
+  jiosaavn: "enabled"
+  gaana: "enabled"
+
+voice:
+  wake_word: "Alexa"
+  languages:
+    default: bn
+    supported: [bn, hi, en]
+
+models:
+  llm:
+    provider: "Qwen"
+    api_key: "YOUR_QWEN_API_KEY"
+  fallback_llm:
+    provider: "ChatGLM"
+    api_key: "YOUR_CHATGLM_API_KEY"
