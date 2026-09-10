@@ -1,4 +1,4 @@
-# Xiaozhi Music India 🎶
+# ESP32 Music India 🎶
 
 A DIY smart speaker backend with Hindi/English/Bengali voice support, multiple Indian music APIs, and ESP32 hardware integration.
 
@@ -15,4 +15,4 @@ A DIY smart speaker backend with Hindi/English/Bengali voice support, multiple I
 1. Clone repo:  
    ```bash
    git clone https://github.com/debanjangain/esp32-music-india.git
-   cd xiaozhi-music-india
+   cd esp32-music-india
