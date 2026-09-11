@@ -11,7 +11,6 @@ class MusicSearch:
     def search_youtube(self, query, limit=5):
         if not self.youtube_enabled:
             return []
-        # Example: using yt-dlp JSON search
         import subprocess, json
         cmd = ["yt-dlp", f"ytsearch{limit}:{query}", "--dump-json"]
         results = []
@@ -30,16 +29,27 @@ class MusicSearch:
     def search_jiosaavn(self, query, limit=5):
         if not self.jiosaavn_enabled:
             return []
-        # Placeholder: JioSaavn API integration
-        # Replace with actual API call
+        # Placeholder: replace with real JioSaavn API integration
         return [{"title": f"JioSaavn result {i+1}", "url": f"https://www.jiosaavn.com/{query}/{i}"} for i in range(limit)]
 
     def search_gaana(self, query, limit=5):
         if not self.gaana_enabled:
             return []
-        # Placeholder: Gaana API integration
-        # Replace with actual API call
+        # Placeholder: replace with real Gaana API integration
         return [{"title": f"Gaana result {i+1}", "url": f"https://gaana.com/{query}/{i}"} for i in range(limit)]
 
     def search_all(self, query, limit=5):
-        results
+        results = {}
+        if self.youtube_enabled:
+            results["youtube"] = self.search_youtube(query, limit)
+        if self.jiosaavn_enabled:
+            results["jiosaavn"] = self.search_jiosaavn(query, limit)
+        if self.gaana_enabled:
+            results["gaana"] = self.search_gaana(query, limit)
+        return {"status": "ok", "results": results}
+
+if __name__ == "__main__":
+    ms = MusicSearch()
+    # Example: pass any query dynamically
+    user_query = input("Enter search term: ")
+    print(ms.search_all(user_query, limit=3))
