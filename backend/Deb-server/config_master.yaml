@@ -3,11 +3,21 @@ server:
 
 apis:
   weather: "YOUR_OPENWEATHER_API_KEY"
-  news_rss: "http://feeds.bbci.co.uk/news/rss.xml"
+
+  # Multiple RSS feeds for news
+  news_feeds:
+    - "http://feeds.bbci.co.uk/news/rss.xml"                # BBC World
+    - "https://news.google.com/rss?hl=en-IN&ceid=IN:en"     # Google News India (English)
+    - "https://www.amarujala.com/rss/uttar-pradesh.xml"     # Amar Ujala Uttar Pradesh
+    - "https://www.amarujala.com/rss/kanpur.xml"            # Amar Ujala Kanpur city feed
+    - "https://www.abpananda.abplive.in/rss/kolkata.xml"    # ABP Ananda Kolkata (Bengali)
+
   sports: "YOUR_CRICKET_API_KEY"
   podcast: "https://api.podcastindex.org"
+
   youtube: "yt-dlp"
   youtube_runtime: "quickjs"
+
   jiosaavn: "enabled"
   gaana: "enabled"
 
