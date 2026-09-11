@@ -1,0 +1,36 @@
+# Core server
+websockets
+pyyaml
+
+# Web framework (if REST API or manager-web used)
+flask
+
+# Database
+sqlalchemy
+sqlite3-binary
+
+# Audio handling
+pyaudio
+soundfile
+
+# Speech recognition (ASR)
+speechrecognition
+vosk
+
+# Text-to-speech (TTS)
+gtts
+pyttsx3
+
+# Language models (LLM)
+transformers
+torch
+
+# Music APIs
+requests
+
+# News / Weather / Sports plugins
+feedparser
+beautifulsoup4
+
+# Podcast plugin
+podcastparser
