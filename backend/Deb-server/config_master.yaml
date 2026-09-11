@@ -36,9 +36,12 @@ voice:
     supported: [bn, hi, en]
 
 models:
-  llm:
+  gemini:
+    provider: "Gemini"
+    api_key: "YOUR_GEMINI_API_KEY"
+  chatgpt:
+    provider: "ChatGPT"
+    api_key: "YOUR_CHATGPT_API_KEY"
+  qwen:
     provider: "Qwen"
     api_key: "YOUR_QWEN_API_KEY"
-  fallback_llm:
-    provider: "ChatGLM"
-    api_key: "YOUR_CHATGLM_API_KEY"
