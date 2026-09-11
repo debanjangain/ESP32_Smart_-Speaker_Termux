@@ -21,6 +21,14 @@ apis:
   jiosaavn: "enabled"
   gaana: "enabled"
 
+  # Speech recognition (ASR)
+  asr_url: "https://api.openai.com/v1/audio/transcriptions"
+  asr_key: "YOUR_ASR_API_KEY"
+
+  # Text-to-speech (TTS)
+  tts_url: "https://api.elevenlabs.io/v1/tts"
+  tts_key: "YOUR_TTS_API_KEY"
+
 voice:
   wake_word: "Alexa"
   languages:
