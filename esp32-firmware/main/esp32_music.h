@@ -3,9 +3,10 @@
 // =======================
 // Wi-Fi + Backend Config
 // =======================
-#define WIFI_SSID "YOUR_WIFI_SSID"
-#define WIFI_PASS "YOUR_WIFI_PASSWORD"
-#define SERVER_URI "ws://192.168.1.100:8765"
+// These values come from Kconfig.projbuild via menuconfig
+#define WIFI_SSID   CONFIG_WIFI_SSID
+#define WIFI_PASS   CONFIG_WIFI_PASS
+#define SERVER_URI  CONFIG_SERVER_URI
 
 // =======================
 // 🎤 INMP441 I2S Microphone
