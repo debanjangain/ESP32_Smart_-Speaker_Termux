@@ -1,0 +1,21 @@
+menu "ESP32 Music Project Configuration"
+
+config WIFI_SSID
+    string "Wi-Fi SSID"
+    default "YOUR_WIFI_SSID"
+    help
+        Enter the name of your Wi-Fi network.
+
+config WIFI_PASS
+    string "Wi-Fi Password"
+    default "YOUR_WIFI_PASSWORD"
+    help
+        Enter the password of your Wi-Fi network.
+
+config SERVER_URI
+    string "Backend WebSocket server URI"
+    default "ws://192.168.1.100:8765"
+    help
+        Address of the backend server for audio streaming.
+
+endmenu
