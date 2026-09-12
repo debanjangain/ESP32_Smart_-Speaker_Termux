@@ -14,5 +14,5 @@ A DIY smart speaker backend with Hindi/English/Bengali voice support, multiple I
 ## Quick Start
 1. Clone repo:  
    ```bash
-   git clone https://github.com/debanjangain/ESP32_Smart_-Speaker_Termux
+   git clone git clone https://github.com/debanjangain/ESP32_Smart_-Speaker_Termux.git
    cd ESP32_Smart_-Speaker_Termux
