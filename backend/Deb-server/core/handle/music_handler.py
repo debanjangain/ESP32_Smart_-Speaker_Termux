@@ -3,7 +3,7 @@ from plugins.music_search import MusicSearch
 from plugins.playlist_manager import PlaylistManager
 from plugins.youtube_music import YouTubeMusic
 
-# Initialize once
+# Initialize plugin classes once
 music_search = MusicSearch()
 playlist = PlaylistManager()
 youtube = YouTubeMusic()
@@ -11,10 +11,11 @@ youtube = YouTubeMusic()
 async def process_music(websocket, message):
     """
     Handle music requests from ESP32.
-    Expected formats:
+    Supported formats:
       MUSIC:SEARCH:<query>
       MUSIC:PLAYLIST:ADD:<source>:<title>:<url>
       MUSIC:PLAYLIST:LIST
+      MUSIC:PLAYLIST:CLEAR
       MUSIC:YOUTUBE:<query>
     """
     try:
@@ -42,11 +43,9 @@ async def process_music(websocket, message):
                     result = playlist.add_item(source, title, url)
                     await websocket.send(str(result))
                 elif sub_action == "LIST":
-                    result = playlist.list_items()
-                    await websocket.send(str(result))
+                    await websocket.send(str(playlist.list_items()))
                 elif sub_action == "CLEAR":
-                    result = playlist.clear()
-                    await websocket.send(str(result))
+                    await websocket.send(str(playlist.clear()))
                 else:
                     await websocket.send("[MUSIC] Invalid playlist command")
             else:
