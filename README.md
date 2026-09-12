@@ -2,17 +2,22 @@
 
 A DIY smart speaker backend with Hindi/English/Bengali voice support, multiple Indian music APIs, and ESP32 hardware integration.
 
-## Features
+---
+
+## ✨ Features
 - ✅ Complete backend server (Python WebSocket)
 - ✅ Music streaming (YouTube, JioSaavn, Gaana, Wynk optional)
-- ✅ Hindi + English voice recognition and TTS
+- ✅ Hindi + English + Bengali voice recognition and TTS
 - ✅ SQLite database for persistence
 - ✅ Wake word "Alexa" integration
-- ✅ Deployment: Android (Termux), Linux, Docker, AWS India
-- ✅ Extra: News, Weather, Sports, Podcast plugins
+- ✅ Deployment options: Android (Termux), Linux, Docker, AWS India
+- ✅ Extra plugins: News, Weather, Sports, Podcasts
 
-## Quick Start
-1. Clone repo:  
+---
+
+## 🚀 Quick Start
+
+1. **Clone the repository**
    ```bash
-   git clone git clone https://github.com/debanjangain/ESP32_Smart_-Speaker_Termux.git
-   cd ESP32_Smart_-Speaker_Termux
+   git clone https://github.com/debanjangain/ESP32_Smart_Speaker_Termux.git
+   cd ESP32_Smart_Speaker_Termux
