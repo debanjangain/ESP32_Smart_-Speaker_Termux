@@ -9,7 +9,7 @@ async def process_audio(websocket, message):
         # For now, just confirm receipt
         print("[AUDIO] Received audio message:", message)
 
-        # Later: decode audio stream, pass to ASR provider (speech recognition)
+        # Later: you can expand this to decode audio and send to ASR provider
         # Example: text = asr_model.transcribe(audio_bytes)
 
         await websocket.send("[AUDIO] Audio processed successfully")
